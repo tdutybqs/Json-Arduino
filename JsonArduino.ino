@@ -46,7 +46,8 @@ bool parseData() {
   Serial.println(httpData);
 
   DynamicJsonBuffer jsonBuffer;
-  JsonArray& root = jsonBuffer.parseArray(httpData);
+  JsonArray& root = jsonBuffer.parseArray(httpData);		
+  // arduinojson.org/v5/faq/parsing-succeeds-but-i-cant-read-the-values/  
 
   if (!root.success()) {
     Serial.println("Json parsing failed!");
