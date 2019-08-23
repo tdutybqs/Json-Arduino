@@ -12,7 +12,6 @@ String text = "";
 String httpData;
 
 void setup() {
-   pinMode(2,OUTPUT);
    Serial.begin(115200);
    WiFi.begin(ssid, password);
 
